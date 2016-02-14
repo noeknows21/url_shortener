@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @url.link %>
+</p>
+
+<p> Your shortened URL is <%= "localhost:3000" + '/' + @url.id.to_s%></p>
+
+<%= link_to 'Edit', edit_url_path(@url) %> |
+<%= link_to 'Back', urls_path %>
